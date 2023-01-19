@@ -17,7 +17,7 @@ label_01 = Label(janela, text="Minha calculadora", font="Abadi 9", fg="#000066",
 label_01.place(x=50, y=8)
 
 label_02_border = Frame(janela, background=azul)
-label_02 = Label(label_02_border, text="0123456789", font="Abadi 20", bd=2, fg="#000066", relief="solid", width=24, height=2, anchor=E, padx=20)
+label_02 = Label(label_02_border, text="0123456789", font="Abadi 20", bd=2, fg="#404040", relief="solid", width=24, height=2, anchor=E, padx=20)
 label_02.pack(padx=1, pady=1)
 label_02_border.place(x=50, y=30)
 
