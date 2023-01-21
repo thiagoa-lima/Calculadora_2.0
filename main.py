@@ -85,7 +85,6 @@ def resultado():
 label_01 = Label(janela, text="Meu primeiro projeto em tKinter", font="Abadi 9", fg="#000066", pady=5)
 label_01.place(x=50, y=20)
 
-
 label_02 = Label(janela, textvariable=valores, font="Abadi 40 bold", fg="#404040", relief="flat", width=13, height=1, anchor=E, padx=7)
 label_02.place(x=50, y=52)
 
