@@ -37,6 +37,13 @@ def resultado():
     valores.set(str(resultado))
     todos_valores = ""
 
+def percentual():
+    global todos_valores
+    percentual = eval(todos_valores)/100
+    valores.set(str(percentual))
+    todos_valores = ""
+
+
 label_01 = Label(janela, text="Meu primeiro projeto em tKinter", font="Abadi 9", fg="#000066", pady=5)
 label_01.place(x=50, y=8)
 
@@ -52,7 +59,7 @@ btn_02 = Button(janela, command=lambda: novos_valores("8"), text="8", font="Abad
 btn_02.place(x=136, y=120)
 btn_03 = Button(janela, command=lambda: novos_valores("9"), text="9", font="Abadi 20 bold", bg=cinza, fg="#000066", relief="groove", width=4, height=1)
 btn_03.place(x=222, y=120)
-btn_04 = Button(janela, command=lambda: novos_valores("%"), text="%", font="Abadi 20 bold", bg=cinza, fg="#000066", relief="groove", width=4, height=1)
+btn_04 = Button(janela, command=percentual, text="%", font="Abadi 20 bold", bg=cinza, fg="#000066", relief="groove", width=4, height=1)
 btn_04.place(x=314, y=120)
 btn_04 = Button(janela, command=limpar_valor, text="C", font="Abadi 20 bold", bg=vermelho, fg="#000066", relief="groove", width=4, height=1)
 btn_04.place(x=400, y=120)
