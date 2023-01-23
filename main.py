@@ -12,7 +12,6 @@ azul = "#9999ff"
 verde = "#99ff99"
 amarelo = "#ffff99"
 
-
 # variável todos os valores
 todos_valores = ""
 tela_principal = ""
@@ -93,8 +92,6 @@ def operadores_matematicos(event):
     print(tela_equacao)
 
     tela_equacao = str(memoria) + str(tela_principal)
-    # total = eval(tela_equacao)
-    # total = round(total, 6)
 
 def percentual():
     global tela_principal
