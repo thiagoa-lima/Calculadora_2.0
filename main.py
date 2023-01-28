@@ -1,4 +1,5 @@
 from tkinter import *
+import datetime
 
 janela = Tk()
 janela.title("Calculadora")
@@ -42,7 +43,6 @@ def limpa_ultimo_digito():
     global cont_clique_resultado
 
     tela_principal = tela_principal[:-1]
-    print(tela_principal)
 
     valores.set(tela_principal)
 
